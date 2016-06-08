@@ -1,0 +1,2 @@
+class SmileController < ApplicationController
+end
