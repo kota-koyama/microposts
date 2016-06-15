@@ -18,5 +18,6 @@ class User < ActiveRecord::Base
                            length: { minimum: 2, maximum: 100 }, 
                            on: :update
                            
+    has_many :microposts
                        
 end
