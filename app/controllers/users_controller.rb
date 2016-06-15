@@ -4,7 +4,6 @@ class UsersController < ApplicationController
 
   def show 
     @user = User.find(params[:id])
-    render 'show'
     @microposts = @user.microposts.order(created_at: :desc)
   end
   
